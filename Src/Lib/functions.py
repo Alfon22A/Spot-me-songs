@@ -117,9 +117,14 @@ def search_song():
 					print("Song:",examples.iloc[2]["Song"])
 					print("Artist:",examples.iloc[2]["Artist"])
 					print("Link:",examples.iloc[2]["Link"])
-		print()			
-		print("Would you more recomendations? Y/N")
-					
+		print()
+		print("Would you like more recomendations? Y/N")
+		answer = str(input())
+		if answer in ["Y", "y", "Yes", "yes"]:
+			search_song()
+		else:
+			print("Bye!")
+				
 	except:
 		print("Your song was not found, please try again.")
 		print()
