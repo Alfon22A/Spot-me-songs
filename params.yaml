@@ -16,4 +16,5 @@ Scalers:
     Standard: "../Scalers/Standard_Scaler.pkl"
 
 Models:
-    K-Means: "../Models/KM_7.pkl"
+    K-Means: "../Models/KM_28.pkl"
+    Gaussian: "../Models/GM_15_S.pkl"
