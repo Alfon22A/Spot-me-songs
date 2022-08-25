@@ -1,7 +1,5 @@
 import streamlit as st
 
-# from App_Search import search_song
-
 import pandas as pd
 import numpy as np
 
@@ -39,7 +37,10 @@ def main ():
 				for track in results["tracks"]["items"]:
 					selection = st.button("{} by {} from {}".format(track["name"], track["artists"][0]["name"], track["album"]["name"]))
 					url = track["external_urls"]["spotify"]
-					st.markdown("[Listen to this song](%s)" % url)
+					url2 = url.split("m/t")
+					embed = url2[0]+"m/embed/t"+url2[1]
+					spotify = '<iframe style="border-radius:12px" src={} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'.format(embed)
+					st.markdown(spotify, unsafe_allow_html=True)
 					
 					if selection:
 						recommender(track)
