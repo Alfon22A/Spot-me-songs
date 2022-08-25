@@ -116,7 +116,10 @@ def search_song():
 					print()
 					print("Song:",examples.iloc[2]["Song"])
 					print("Artist:",examples.iloc[2]["Artist"])
-					print("Link:",examples.iloc[2]["Link"])       
+					print("Link:",examples.iloc[2]["Link"])
+		print()			
+		print("Would you more recomendations? Y/N")
+					
 	except:
 		print("Your song was not found, please try again.")
 		print()
