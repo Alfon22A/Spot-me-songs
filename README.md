@@ -70,6 +70,11 @@ K-Means with 28 clusters.
 
 Built with Streamlit.
 
+To use, run the Python script Spot-me-songs.py with the following command in your console:
+
+```powershell
+streamlit run Spot-me-songs.py
+```
 ## Config
 
 You will need a ```config.py``` file in ```Src/Lib/``` with your credentials:
