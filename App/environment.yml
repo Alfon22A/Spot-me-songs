@@ -1,6 +1,7 @@
 name: Spot-me-songs
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - python=3.9
   - numpy
@@ -8,4 +9,6 @@ dependencies:
   - pyyaml
   - scikit-learn
   - pip
+  - pip:
+    - spotipy
 prefix: E:\Programs\Anaconda3\envs\Spot-me-songs
