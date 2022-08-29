@@ -16,7 +16,7 @@ import yaml
 def recommender(track):
 	
 	st.write("Selected {} by {} from {}".format(track["name"], track["artists"][0]["name"], track["album"]["name"]))
-	sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id= Client_ID, client_secret= Client_Secret))
+	sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=Client_ID, client_secret=Client_Secret))
 
 	track_columns = ["Song", "Artist", "ID", "Link",
                     "danceability", "energy", "key", "loudness",

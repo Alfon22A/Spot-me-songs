@@ -6,9 +6,9 @@ import numpy as np
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-# import sys
-# sys.path.insert(1, '../Src/Lib')
-# from config import *
+import sys
+sys.path.insert(1, '../Src/Lib')
+from config import *
 
 from Recommender import recommender
 
@@ -29,7 +29,7 @@ def main ():
 		if song:
 			def search_song(song):
 	
-				sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=st.secrets["Client_ID"], client_secret=st.secrets["Client_Secret"]))
+				sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=Client_ID, client_secret=Client_Secret))
 					
 				results = sp.search(q=song, limit = 5)
 				
