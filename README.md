@@ -2,6 +2,8 @@
 
 # Spot-me-songs
 
+## Introduction
+
 This is a Song Recommender built with Python SpotiPy using the Spotify API.
 
 It contains a database with over 3500 songs collected with two different methods.
