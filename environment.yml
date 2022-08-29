@@ -2,7 +2,7 @@ name: Spot-me-songs
 channels:
   - defaults
 dependencies:
-  - python
+  - python=3.9
   - numpy
   - pandas
   - pyyaml
@@ -11,3 +11,4 @@ dependencies:
   - pip:
     - spotipy==2.20.0
     - streamlit==1.12.2
+prefix: E:\Programs\Anaconda3\envs\Spot-me-songs
