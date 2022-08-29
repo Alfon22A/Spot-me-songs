@@ -2,14 +2,11 @@ name: Spot-me-songs
 channels:
   - defaults
 dependencies:
-  - python=3.9
+  - python
   - numpy
   - pandas
-  - seaborn
   - pyyaml
   - scikit-learn
-  - matplotlib
-  - jupyter
   - pip=22.1.2
   - pip:
     - spotipy==2.20.0
