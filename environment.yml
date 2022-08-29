@@ -9,6 +9,5 @@ dependencies:
   - scikit-learn
   - pip
   - pip:
-    - spotipy==2.20.0
     - streamlit==1.12.2
 prefix: E:\Programs\Anaconda3\envs\Spot-me-songs
