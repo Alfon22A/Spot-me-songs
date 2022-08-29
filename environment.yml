@@ -7,7 +7,7 @@ dependencies:
   - pandas
   - pyyaml
   - scikit-learn
-  - pip=22.1.2
+  - pip
   - pip:
     - spotipy==2.20.0
     - streamlit==1.12.2
