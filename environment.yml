@@ -10,6 +10,6 @@ dependencies:
   - scikit-learn
   - matplotlib
   - jupyter
-  - spotipy
+  - spotipy=2.20.0
   - streamlit
 prefix: E:\Programs\Anaconda3\envs\Spot-me-songs
