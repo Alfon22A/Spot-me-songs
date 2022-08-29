@@ -8,6 +8,4 @@ dependencies:
   - pyyaml
   - scikit-learn
   - pip
-  - pip:
-    - streamlit==1.12.2
 prefix: E:\Programs\Anaconda3\envs\Spot-me-songs
