@@ -10,6 +10,7 @@ dependencies:
   - scikit-learn
   - matplotlib
   - jupyter
-  - streamlit
+  - pip=22.1.2=py39haa95532_0
   - pip:
-    - spotipy
+    - spotipy==2.20.0
+    - streamlit==1.12.2
