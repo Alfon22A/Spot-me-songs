@@ -11,5 +11,6 @@ dependencies:
   - matplotlib
   - jupyter
   - streamlit
+pip:
   - spotipy==2.20.0
 prefix: E:\Programs\Anaconda3\envs\Spot-me-songs
