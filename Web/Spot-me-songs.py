@@ -17,7 +17,7 @@ def main ():
 	choice = st.sidebar.selectbox("Menu", options, key = "1")
 	if (choice == "Main"):
 		col1, col2 = st.columns(2)
-		col1.title("Images/Spot-me-songs")
+		col1.title("Spot-me-songs")
 		col1.write("By Alfonso Muñoz and Ignace Gravereaux, 2022")
 		col2.image("Images/Spot-me-songs.png")
 		st.header("Get song recommendations from a database with more than 3500 songs!")
