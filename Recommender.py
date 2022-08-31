@@ -6,17 +6,13 @@ import streamlit as st
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-import sys
-sys.path.insert(1, '../Src/Lib')
-from config import *
-
 import pickle
 import yaml
 
 def recommender(track):
 	
 	st.write("Selected {} by {} from {}".format(track["name"], track["artists"][0]["name"], track["album"]["name"]))
-	sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=Client_ID, client_secret=Client_Secret))
+	sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=st.secrets["Client_ID"], client_secret=st.secrets["Client_Secret"]))
 
 	track_columns = ["Song", "Artist", "ID", "Link",
                     "danceability", "energy", "key", "loudness",
@@ -41,7 +37,7 @@ def recommender(track):
         
 	song_data = song_data.drop(columns = ["Song", "Artist", "ID", "Link", "Energy", "Mode", "Time Signature", "Duration", "Key", "Liveness"])
             
-	with open("../params.yaml", "r") as file:
+	with open("params.yaml", "r") as file:
 		config = yaml.safe_load(file)
             
 	with open(config["Transformers"]["Power"], "rb") as file:

@@ -6,10 +6,6 @@ import numpy as np
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-import sys
-sys.path.insert(1, '../Src/Lib')
-from config import *
-
 from Recommender import recommender
 
 import pickle
@@ -23,13 +19,13 @@ def main ():
 		col1, col2 = st.columns(2)
 		col1.title("Spot-me-songs")
 		col1.write("By Alfonso Muñoz and Ignace Gravereaux, 2022")
-		col2.image("../Images/Spot-me-songs.png")
+		col2.image("Images/Spot-me-songs.png")
 		st.header("Get song recommendations from a database with more than 3500 songs!")
 		song = st.text_input("Title of your song:")
 		if song:
 			def search_song(song):
 	
-				sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=Client_ID, client_secret=Client_Secret))
+				sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=st.secrets["Client_ID"], client_secret=st.secrets["Client_Secret"]))
 					
 				results = sp.search(q=song, limit = 5)
 				
