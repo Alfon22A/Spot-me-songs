@@ -1,4 +1,4 @@
-![Spot-me-songs](https://github.com/Alfon22A/GNOD-Project/blob/master/Images/Spot-me-songs200.png)
+![Spot-me-songs](https://github.com/Alfon22A/GNOD-Project/blob/master/Images/Spot-me-songs.png)
 
 # Spot-me-songs
 
