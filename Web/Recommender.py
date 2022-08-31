@@ -39,7 +39,7 @@ def recommender(track):
 	
 	st.write(song_data)
 	
-	with open("./params_web.yaml", "r") as file:
+	with open("params.yaml", "r") as file:
 		config = yaml.safe_load(file)
 		
 	st.write(config)
