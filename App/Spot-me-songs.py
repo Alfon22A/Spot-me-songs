@@ -23,7 +23,7 @@ def main ():
 		col1, col2 = st.columns(2)
 		col1.title("Spot-me-songs")
 		col1.write("By Alfonso Muñoz and Ignace Gravereaux, 2022")
-		col2.image("../Images/Spot-me-songs.png")
+		col2.image("https://github.com/Alfon22A/GNOD-Project/blob/master/Images/Spot-me-songs.png")
 		st.header("Get song recommendations from a database with more than 3500 songs!")
 		song = st.text_input("Title of your song:")
 		if song:
