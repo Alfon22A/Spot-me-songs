@@ -24,8 +24,6 @@ def recommender(track):
 	track_features["Artist"] = track["artists"][0]["name"]
 	track_features["ID"] = track["id"]
 	track_features["Link"] = track["external_urls"]["spotify"]
-	
-	st.write(track_features)
         
 	audio_features = sp.audio_features(track["id"])[0]
 	for feature in track_columns[4:]:
@@ -38,13 +36,9 @@ def recommender(track):
                                             'Valence', 'Tempo', 'Duration', 'Time Signature']
         
 	song_data = song_data.drop(columns = ["Song", "Artist", "ID", "Link", "Energy", "Mode", "Time Signature", "Duration", "Key", "Liveness"])
-            
-	st.write(song_data)
 	
 	with open("params.yaml", "r") as file:
 		config = yaml.safe_load(file)
-		
-	st.write(config)
             
 	with open(config["Transformers"]["Power"], "rb") as file:
 		transformer = pickle.load(file)
@@ -60,6 +54,8 @@ def recommender(track):
             
 	with open(config["Data"]["Songs_DB_Clusters"], "r", encoding = "utf-8") as file:
 		songs = pd.read_csv(file)
+		
+	st.write(songs)
         
 	st.write("Your recommended songs are:")
         
