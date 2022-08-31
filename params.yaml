@@ -4,7 +4,7 @@ Data:
     Hot_100_Data: "../Data/Clean/Hot_100_Data.csv"
     Songs_DB: "../Data/Clean/Songs_DB.csv"
     Songs_Data: "../Data/Clean/Songs_Data.csv"
-    Songs_DB_Clusters: "Data/Clean/Songs_DB_Clusters.csv"
+    Songs_DB_Clusters: "../Data/Clean/Songs_DB_Clusters.csv"
 
 Random:
     State: 22
