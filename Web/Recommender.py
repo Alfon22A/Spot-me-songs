@@ -37,6 +37,8 @@ def recommender(track):
         
 	song_data = song_data.drop(columns = ["Song", "Artist", "ID", "Link", "Energy", "Mode", "Time Signature", "Duration", "Key", "Liveness"])
 	
+	st.write(song_data)
+	
 	with open("params_web.yaml", "r") as file:
 		config = yaml.safe_load(file)
 		
