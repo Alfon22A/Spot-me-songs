@@ -1,7 +1,7 @@
+import streamlit as st
+
 import pandas as pd
 import numpy as np
-
-import streamlit as st
 
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
@@ -24,6 +24,8 @@ def recommender(track):
 	track_features["Artist"] = track["artists"][0]["name"]
 	track_features["ID"] = track["id"]
 	track_features["Link"] = track["external_urls"]["spotify"]
+	
+	st.write(track_features)
         
 	audio_features = sp.audio_features(track["id"])[0]
 	for feature in track_columns[4:]:
@@ -37,8 +39,12 @@ def recommender(track):
         
 	song_data = song_data.drop(columns = ["Song", "Artist", "ID", "Link", "Energy", "Mode", "Time Signature", "Duration", "Key", "Liveness"])
             
+	st.write(song_data)
+	
 	with open("params.yaml", "r") as file:
 		config = yaml.safe_load(file)
+		
+	st.write(config)
             
 	with open(config["Transformers"]["Power"], "rb") as file:
 		transformer = pickle.load(file)

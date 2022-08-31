@@ -1,17 +1,17 @@
+import streamlit as st
+
 import pandas as pd
 import numpy as np
-
-import streamlit as st
 
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
+import pickle
+import yaml
+
 import sys
 sys.path.insert(1, '../Src/Lib')
 from config import *
-
-import pickle
-import yaml
 
 def recommender(track):
 	

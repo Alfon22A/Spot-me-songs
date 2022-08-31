@@ -6,10 +6,10 @@ import numpy as np
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-from Recommender import recommender
-
 import pickle
 import yaml
+
+from Recommender import recommender
 
 def main ():
 	

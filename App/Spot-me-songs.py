@@ -6,14 +6,14 @@ import numpy as np
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
+import pickle
+import yaml
+
 import sys
 sys.path.insert(1, '../Src/Lib')
 from config import *
 
 from Recommender import recommender
-
-import pickle
-import yaml
 
 def main ():
 	
