@@ -10,11 +10,11 @@ Random:
     State: 22
 
 Transformers:
-    Power: "Transformers/Power_Transformer.pkl"
+    Power: "../Transformers/Power_Transformer.pkl"
 
 Scalers:
-    Standard: "Scalers/Standard_Scaler.pkl"
+    Standard: "../Scalers/Standard_Scaler.pkl"
 
 Models:
-    K-Means: "Models/KM_28.pkl"
-    Gaussian: "Models/GM_15_S.pkl"
+    K-Means: "../Models/KM_28.pkl"
+    Gaussian: "../Models/GM_15_S.pkl"
