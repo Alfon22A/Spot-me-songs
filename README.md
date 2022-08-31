@@ -14,7 +14,7 @@ It has a Spotify embedded player.
 
 ## Data Collection
 
-Web Scrapping: [Billboard](https://www.billboard.com/charts/hot-100/)
+Web Scraping: [Billboard](https://www.billboard.com/charts/hot-100/)
 
 Spotify API: [Spotify](https://open.spotify.com/playlist/1G8IpkZKobrIlXcVPoSIuf)
 
