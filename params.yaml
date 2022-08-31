@@ -4,17 +4,17 @@ Data:
     Hot_100_Data: "../Data/Clean/Hot_100_Data.csv"
     Songs_DB: "../Data/Clean/Songs_DB.csv"
     Songs_Data: "../Data/Clean/Songs_Data.csv"
-    Songs_DB_Clusters: "/Data/Clean/Songs_DB_Clusters.csv"
+    Songs_DB_Clusters: "Data/Clean/Songs_DB_Clusters.csv"
 
 Random:
     State: 22
 
 Transformers:
-    Power: "/Transformers/Power_Transformer.pkl"
+    Power: "Transformers/Power_Transformer.pkl"
 
 Scalers:
-    Standard: "/Scalers/Standard_Scaler.pkl"
+    Standard: "Scalers/Standard_Scaler.pkl"
 
 Models:
-    K-Means: "/Models/KM_28.pkl"
-    Gaussian: "/Models/GM_15_S.pkl"
+    K-Means: "Models/KM_28.pkl"
+    Gaussian: "Models/GM_15_S.pkl"

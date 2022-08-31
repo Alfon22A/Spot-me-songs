@@ -43,13 +43,15 @@ def recommender(track):
 	with open(config["Transformers"]["Power"], "rb") as file:
 		transformer = pickle.load(file)
 	song_data_pt = transformer.transform(song_data)
-										 
+	
+	st.write(transformer)
 	st.write(song_data_pt)
         
 	with open(config["Scalers"]["Standard"], "rb") as file:
 		scaler = pickle.load(file)
 	song_data_pt_ss = scaler.transform(song_data_pt)
-        
+    
+	st.write(scaler)
 	st.write(song_data_pt_ss)
 		
 	with open(config["Models"]["K-Means"], "rb") as file:
